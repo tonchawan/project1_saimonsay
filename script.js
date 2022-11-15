@@ -31,3 +31,8 @@ function saimonChooses(){
   return saimon.push(colorBtn[randomColor].value)
 }
 
+// add Start startButton
+const startBtn = document.querySelector("#start")
+startBtn.addEventListener("click", ()=>{console.log("ho ao ha")})
+
+//let saimon generate  value
