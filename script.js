@@ -10,7 +10,7 @@ console.log(submitBtn)
 // Makes color clickable
 colorBtn.forEach((color, i) => {
     color.addEventListener("click", ()=>{
-      console.log(saimon.push(colorBtn[i].value) )})
+      console.log(player.push(colorBtn[i].value) )})
   })
 
 //Make submit clickable
@@ -22,3 +22,12 @@ let saimon = []
 let player = []
 
 // add back to function
+// make a turn 
+const turn = true
+// make computer chose a color by it self
+
+function saimonChooses(){
+  let randomColor = Math.floor(Math.random() * colorBtn.length);
+  return saimon.push(colorBtn[randomColor].value)
+}
+
