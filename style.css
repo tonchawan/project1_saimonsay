@@ -1,3 +1,23 @@
-body { 
+body{
+    display : flex
+
+    
+}
+
+div #red { 
     background-color: red;
+    border: 1px black;
+}
+div #blue { 
+    background-color: blue;
+}
+div #green { 
+    background-color: green;
+}
+div #yellow { 
+    background-color: yellow;
+}
+
+#submit{
+    display: none;
 }
