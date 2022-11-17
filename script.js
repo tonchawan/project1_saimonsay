@@ -4,18 +4,14 @@
 let colorBtn = document.querySelectorAll(".color-box")
 let submitBtn = document.querySelector("#submit")
 
-console.log(colorBtn)
-console.log(submitBtn)
-
 // Makes color clickable
 colorBtn.forEach((color, i) => {
     color.addEventListener("click", ()=>{
-      console.log(player.push(colorBtn[i]) )
+      player.push(colorBtn[i]) 
       color.style.backgroundColor = "pink"
       setTimeout(()=>{
         color.style.backgroundColor = color.id
       }, 300)
-      console.log(player)
     })
   })
   
@@ -31,7 +27,6 @@ const turn = true
 function saimonChooses(){
   let randomColor = Math.floor(Math.random() * colorBtn.length);
   saimon.push(colorBtn[randomColor])
-  console.log(saimon)
   flashOrder()
   startBtn.style.display = "none"
   submitBtn.style.display = "block"
@@ -63,9 +58,6 @@ function submit (){
   startBtn.style.display = "block"
   submitBtn.style.display = "none"
   for(let i = 0; i <player.length ; i++ ){
-    
-    console.log(saimon[i])
-    console.log(player[i])
     if(saimon[i] !== player[i]){
   
     saimon = []
