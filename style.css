@@ -5,6 +5,9 @@ html, body {
     padding: 0;
 }
 body{
+    background-image: url(https://icon2.kisspng.com/20180330/wcq/kisspng-sashimi-smoked-salmon-lox-kebab-salmon-5abe3d588736f6.4079462815224169845539.jpg);
+    background-size: 100px;
+    background-repeat: repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,19 +15,17 @@ body{
     font-family: 'Nerko One', cursive;
 }
 h1{
- font-size: 50px ;
+ font-size: 65px ;
 }
-div#main-color-box{
-    padding: 10px ;
-}
+
 .color-box{
     padding: 40px ;
-    margin: 20px;
+    margin: 10px;
     border-radius: 20px;
 }
 .respond-box {
     padding: 30px 100px;
-    margin: 20px;
+    margin-bottom: 20px;
     border-radius: 20px;
 }
 div #red { 
