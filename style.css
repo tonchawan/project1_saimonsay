@@ -1,12 +1,35 @@
-body{
-    display : flex
-
-    
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
-
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Nerko One', cursive;
+}
+h1{
+ font-size: 50px ;
+}
+div#main-color-box{
+    padding: 10px ;
+}
+.color-box{
+    padding: 40px ;
+    margin: 20px;
+    border-radius: 20px;
+}
+.respond-box {
+    padding: 30px 100px;
+    margin: 20px;
+    border-radius: 20px;
+}
 div #red { 
     background-color: red;
-    border: 1px black;
+
 }
 div #blue { 
     background-color: blue;

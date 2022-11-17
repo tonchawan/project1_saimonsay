@@ -18,7 +18,6 @@ colorBtn.forEach((color, i) => {
       console.log(player)
     })
   })
-
   
   // Computer can have memory
   let saimon = []
@@ -67,7 +66,7 @@ function submit (){
     
     console.log(saimon[i])
     console.log(player[i])
-    if(saimon[i] != player[i]){
+    if(saimon[i] !== player[i]){
   
     saimon = []
     player = []
