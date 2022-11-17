@@ -62,12 +62,12 @@ function submit (){
   
     saimon = []
     player = []
-    alert("OH ON!!!. Back to level 1")
+    alert("OH No!!!. Back to level 1")
     return
   }
 }
 player = []
-alert("Pass ")
+alert("congratulations please click start to continue ")
 }
 //Make submit clickable
 submitBtn.addEventListener("click", submit)
