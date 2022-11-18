@@ -67,7 +67,20 @@ function submit (){
   }
 }
 player = []
-alert("congratulations please click start to continue ")
+alert(`congratulations please click start to continue level ${saimon.length+1}`)
+getScore()
 }
 //Make submit clickable
 submitBtn.addEventListener("click", submit)
+
+// creat High score board
+let highestLevel =  1
+
+function getScore (){
+  highestLevel = highestLevel +1
+  console.log(highestLevel)
+  localStorage.setItem("board", highestLevel)
+  localStorage.getItem("board")
+  return
+}
+document.querySelector(".score-board").innerHTML =`Highest Level = ${localStorage.getItem("board")}` 

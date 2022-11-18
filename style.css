@@ -15,18 +15,22 @@ body{
     font-family: 'Nerko One', cursive;
 }
 h1{
- font-size: 65px ;
+ font-size: 60px ;
 }
 
 .color-box{
     padding: 40px ;
     margin: 10px;
     border-radius: 20px;
+    font-family: 'Nerko One', cursive;
+    font-size: 30px ;
 }
 .respond-box {
-    padding: 30px 100px;
+    padding: 20px 85px;
     margin-bottom: 20px;
     border-radius: 20px;
+    font-family: 'Nerko One', cursive;
+    font-size: 30px ;
 }
 div #red { 
     background-color: red;
