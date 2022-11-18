@@ -78,7 +78,6 @@ let highestLevel =  1
 
 function getScore (){
   highestLevel = highestLevel +1
-  console.log(highestLevel)
   localStorage.setItem("board", highestLevel)
   localStorage.getItem("board")
   return

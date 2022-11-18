@@ -51,3 +51,17 @@ div #purple {
 #submit{
     display: none;
 }
+.score-board{
+    border: 2px solid red;
+    margin: 0 20px 0 0;
+    font-size: 20 px;
+}
+#score-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+#saimon{
+    margin: 30px ;
+}
