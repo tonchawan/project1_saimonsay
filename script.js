@@ -57,8 +57,8 @@ saimon.forEach((color, i) => {
 function submit (){
   startBtn.style.display = "block"
   submitBtn.style.display = "none"
-  for(let i = 0; i <player.length ; i++ ){
-    if(saimon[i] !== player[i] || saimon.length !== player){
+  for(let i = 0; i <saimon.length ; i++ ){
+    if(saimon[i] !== player[i] || saimon.length !== player.length){
   
     saimon = []
     player = []
@@ -74,12 +74,15 @@ getScore()
 submitBtn.addEventListener("click", submit)
 
 // creat High score board
-let highestLevel =  1
+let highestLevel =  0
 
 function getScore (){
-  highestLevel = highestLevel +1
+  if(saimon.length+1 >localStorage.getItem("board"))
+  {
+  highestLevel = saimon.length +1
   localStorage.setItem("board", highestLevel)
   localStorage.getItem("board")
+  }
   return
 }
 document.querySelector(".score-board").innerHTML =`Highest Level = ${localStorage.getItem("board")}` 
