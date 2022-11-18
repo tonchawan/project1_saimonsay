@@ -58,7 +58,7 @@ function submit (){
   startBtn.style.display = "block"
   submitBtn.style.display = "none"
   for(let i = 0; i <player.length ; i++ ){
-    if(saimon[i] !== player[i]){
+    if(saimon[i] !== player[i] || saimon.length !== player){
   
     saimon = []
     player = []
