@@ -37,7 +37,6 @@ function saimonChooses(){
 //let saimon generate  value
 const startBtn = document.querySelector("#start")
 startBtn.addEventListener("click", saimonChooses)
-
 // make them glow
 function flashOrder (){
 saimon.forEach((color, i) => {
