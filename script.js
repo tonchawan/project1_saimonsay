@@ -11,6 +11,7 @@ colorBtn.forEach((color, i) => {
       color.style.backgroundColor = "pink"
       setTimeout(()=>{
         color.style.backgroundColor = color.id
+        
       }, 300)
     })
   })
